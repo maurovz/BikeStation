@@ -12,6 +12,11 @@ public struct CoreDataServices {
       entity.name = station.name
       entity.longitude = station.longitude
       entity.longitude = station.latitude
+      entity.freeBikes = Int16(station.freeBikes)
+      if let emptySlots = station.emptySlots{
+        entity.emptySlots = Int16(emptySlots)
+      }
+      entity.stationNumber = station.stationNumber
       CoreDataStack.saveContext()
     }
   }
@@ -23,12 +28,13 @@ public struct CoreDataServices {
     for entity in entities {
       guard
         let id = entity.id,
-        let name = entity.name
+        let name = entity.name,
+        let stationNumber = entity.stationNumber
       else {
         continue
       }
 
-      stations.append(Station(id: id, name: name, latitude: entity.latitude, longitude: entity.longitude))
+      stations.append(Station(id: id, name: name, latitude: entity.latitude, longitude: entity.longitude, freeBikes: Int(entity.freeBikes), emptySlots: Int(entity.emptySlots), stationNumber: stationNumber))
     }
 
     return stations

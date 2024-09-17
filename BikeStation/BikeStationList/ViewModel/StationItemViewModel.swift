@@ -18,6 +18,18 @@ class StationItemViewModel: Identifiable {
     station.longitude
   }()
 
+  lazy var freeBikes: Int = {
+    station.freeBikes
+  }()
+
+  lazy var emptySlots: Int = {
+    station.emptySlots ?? 0
+  }()
+
+  lazy var stationNumber: String = {
+    station.stationNumber
+  }()
+
   private let station: Station
 
   init(station: Station) {
