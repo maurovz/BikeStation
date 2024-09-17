@@ -3,6 +3,7 @@ import SwiftUI
 struct BikeStationListView: View {
   @ObservedObject var viewModel: BikeStationsViewModel
   @EnvironmentObject var locationManager: LocationManager
+  @Environment(\.openURL) var openURL
 
   init(viewModel: BikeStationsViewModel) {
     self.viewModel = viewModel
@@ -30,7 +31,7 @@ struct BikeStationListView: View {
           }
           .padding()
           .onTapGesture {
-            viewModel.didSelectAction(station)
+            openURL(viewModel.getCoordinatesUrl(station: station))
           }
           .background(Color.gray.opacity(0.1))
           .cornerRadius(8)
