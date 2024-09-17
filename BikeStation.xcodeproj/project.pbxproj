@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44898CA82C9A058D00A9226B /* StationModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 44898CA62C9A058D00A9226B /* StationModel.xcdatamodeld */; };
 		5463EC8C2C99D54000C422F4 /* BikeStationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463EC8B2C99D54000C422F4 /* BikeStationApp.swift */; };
 		5463EC922C99D54200C422F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5463EC912C99D54200C422F4 /* Assets.xcassets */; };
 		5463EC952C99D54200C422F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5463EC942C99D54200C422F4 /* Preview Assets.xcassets */; };
@@ -20,7 +21,6 @@
 		5463ECC92C99D7AA00C422F4 /* RemoteStationLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463ECC82C99D7AA00C422F4 /* RemoteStationLoader.swift */; };
 		5463ECCC2C99D80E00C422F4 /* StationMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463ECCB2C99D80E00C422F4 /* StationMapper.swift */; };
 		5463ECCF2C99D9DE00C422F4 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463ECCE2C99D9DE00C422F4 /* CoreDataStack.swift */; };
-		5463ECD22C99D9FB00C422F4 /* StationModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5463ECD02C99D9FB00C422F4 /* StationModel.xcdatamodeld */; };
 		5463ECD42C99DAB600C422F4 /* CoreDataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463ECD32C99DAB600C422F4 /* CoreDataServices.swift */; };
 		5463ECD72C99DD4100C422F4 /* HTTPClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463ECD62C99DD4100C422F4 /* HTTPClientSpy.swift */; };
 		5463ECD92C99DD4F00C422F4 /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463ECD82C99DD4F00C422F4 /* SharedTestHelpers.swift */; };
@@ -73,6 +73,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		44898CA72C9A058D00A9226B /* StationModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StationModel.xcdatamodel; sourceTree = "<group>"; };
 		5463EC882C99D54000C422F4 /* BikeStation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BikeStation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5463EC8B2C99D54000C422F4 /* BikeStationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationApp.swift; sourceTree = "<group>"; };
 		5463EC912C99D54200C422F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,7 +89,6 @@
 		5463ECC82C99D7AA00C422F4 /* RemoteStationLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteStationLoader.swift; sourceTree = "<group>"; };
 		5463ECCB2C99D80E00C422F4 /* StationMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationMapper.swift; sourceTree = "<group>"; };
 		5463ECCE2C99D9DE00C422F4 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
-		5463ECD12C99D9FB00C422F4 /* StationModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StationModel.xcdatamodel; sourceTree = "<group>"; };
 		5463ECD32C99DAB600C422F4 /* CoreDataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataServices.swift; sourceTree = "<group>"; };
 		5463ECD62C99DD4100C422F4 /* HTTPClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientSpy.swift; sourceTree = "<group>"; };
 		5463ECD82C99DD4F00C422F4 /* SharedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
@@ -240,8 +240,8 @@
 		5463ECCD2C99D9D000C422F4 /* Infra */ = {
 			isa = PBXGroup;
 			children = (
+				44898CA62C9A058D00A9226B /* StationModel.xcdatamodeld */,
 				5463ECCE2C99D9DE00C422F4 /* CoreDataStack.swift */,
-				5463ECD02C99D9FB00C422F4 /* StationModel.xcdatamodeld */,
 			);
 			path = Infra;
 			sourceTree = "<group>";
@@ -466,8 +466,8 @@
 				5463ECC12C99D66700C422F4 /* Station.swift in Sources */,
 				5463ECCC2C99D80E00C422F4 /* StationMapper.swift in Sources */,
 				5463ECD42C99DAB600C422F4 /* CoreDataServices.swift in Sources */,
+				44898CA82C9A058D00A9226B /* StationModel.xcdatamodeld in Sources */,
 				5463ECBE2C99D64500C422F4 /* StationLoader.swift in Sources */,
-				5463ECD22C99D9FB00C422F4 /* StationModel.xcdatamodeld in Sources */,
 				5463ECC72C99D79E00C422F4 /* HTTPClient.swift in Sources */,
 				5463ECC92C99D7AA00C422F4 /* RemoteStationLoader.swift in Sources */,
 				5463ECC52C99D79000C422F4 /* URLSessionHTTPClient.swift in Sources */,
@@ -865,14 +865,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		5463ECD02C99D9FB00C422F4 /* StationModel.xcdatamodeld */ = {
+		44898CA62C9A058D00A9226B /* StationModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				5463ECD12C99D9FB00C422F4 /* StationModel.xcdatamodel */,
+				44898CA72C9A058D00A9226B /* StationModel.xcdatamodel */,
 			);
-			currentVersion = 5463ECD12C99D9FB00C422F4 /* StationModel.xcdatamodel */;
-			name = StationModel.xcdatamodeld;
-			path = "/Users/mauriciovazquez/Documents/BikeStation/BikeDataFeature/Station Feature/Cache/Infra/StationModel.xcdatamodeld";
+			currentVersion = 44898CA72C9A058D00A9226B /* StationModel.xcdatamodel */;
+			path = StationModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
