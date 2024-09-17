@@ -26,5 +26,5 @@ struct BikeStationListView: View {
 }
 
 #Preview {
-  ContentView()
+  BikeStationListViewFactory.create()
 }

@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5463EC8C2C99D54000C422F4 /* BikeStationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463EC8B2C99D54000C422F4 /* BikeStationApp.swift */; };
-		5463EC8E2C99D54000C422F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463EC8D2C99D54000C422F4 /* ContentView.swift */; };
-		5463EC902C99D54000C422F4 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463EC8F2C99D54000C422F4 /* Item.swift */; };
 		5463EC922C99D54200C422F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5463EC912C99D54200C422F4 /* Assets.xcassets */; };
 		5463EC952C99D54200C422F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5463EC942C99D54200C422F4 /* Preview Assets.xcassets */; };
 		5463ECA82C99D5F700C422F4 /* BikeDataFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5463ECA02C99D5F700C422F4 /* BikeDataFeature.framework */; };
@@ -76,8 +74,6 @@
 /* Begin PBXFileReference section */
 		5463EC882C99D54000C422F4 /* BikeStation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BikeStation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5463EC8B2C99D54000C422F4 /* BikeStationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationApp.swift; sourceTree = "<group>"; };
-		5463EC8D2C99D54000C422F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		5463EC8F2C99D54000C422F4 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		5463EC912C99D54200C422F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5463EC942C99D54200C422F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5463ECA02C99D5F700C422F4 /* BikeDataFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BikeDataFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,11 +150,9 @@
 		5463EC8A2C99D54000C422F4 /* BikeStation */ = {
 			isa = PBXGroup;
 			children = (
-				54D96EFC2C99E6F800D83814 /* Factories */,
 				54D96EE92C99E3E100D83814 /* BikeStationList */,
+				54D96EFC2C99E6F800D83814 /* Factories */,
 				5463EC8B2C99D54000C422F4 /* BikeStationApp.swift */,
-				5463EC8D2C99D54000C422F4 /* ContentView.swift */,
-				5463EC8F2C99D54000C422F4 /* Item.swift */,
 				5463EC912C99D54200C422F4 /* Assets.xcassets */,
 				5463EC932C99D54200C422F4 /* Preview Content */,
 				54D96EFF2C99E77200D83814 /* Constants.swift */,
@@ -446,9 +440,7 @@
 				54D96EFE2C99E70800D83814 /* BikeStationListViewFactory.swift in Sources */,
 				54D96EED2C99E42400D83814 /* StationItemViewModel.swift in Sources */,
 				54D96EE82C99E3B300D83814 /* BikeStationListView.swift in Sources */,
-				5463EC8E2C99D54000C422F4 /* ContentView.swift in Sources */,
 				54D96EEB2C99E40D00D83814 /* BikeStationsViewModel.swift in Sources */,
-				5463EC902C99D54000C422F4 /* Item.swift in Sources */,
 				5463EC8C2C99D54000C422F4 /* BikeStationApp.swift in Sources */,
 				54D96F002C99E77200D83814 /* Constants.swift in Sources */,
 			);
