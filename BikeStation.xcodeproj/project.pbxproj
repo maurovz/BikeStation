@@ -13,7 +13,7 @@
 		5463EC922C99D54200C422F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5463EC912C99D54200C422F4 /* Assets.xcassets */; };
 		5463EC952C99D54200C422F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5463EC942C99D54200C422F4 /* Preview Assets.xcassets */; };
 		5463ECA82C99D5F700C422F4 /* BikeDataFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5463ECA02C99D5F700C422F4 /* BikeDataFeature.framework */; };
-		5463ECAF2C99D5F700C422F4 /* BikeDataFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463ECAE2C99D5F700C422F4 /* BikeDataFeatureTests.swift */; };
+		5463ECAF2C99D5F700C422F4 /* LoadStationFromRemoteUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463ECAE2C99D5F700C422F4 /* LoadStationFromRemoteUseCaseTests.swift */; };
 		5463ECB02C99D5F700C422F4 /* BikeDataFeature.h in Headers */ = {isa = PBXBuildFile; fileRef = 5463ECA22C99D5F700C422F4 /* BikeDataFeature.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5463ECB32C99D5F700C422F4 /* BikeDataFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5463ECA02C99D5F700C422F4 /* BikeDataFeature.framework */; platformFilters = (macos, ); };
 		5463ECB42C99D5F700C422F4 /* BikeDataFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5463ECA02C99D5F700C422F4 /* BikeDataFeature.framework */; platformFilters = (macos, ); settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -78,7 +78,7 @@
 		5463ECA02C99D5F700C422F4 /* BikeDataFeature.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BikeDataFeature.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5463ECA22C99D5F700C422F4 /* BikeDataFeature.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BikeDataFeature.h; sourceTree = "<group>"; };
 		5463ECA72C99D5F700C422F4 /* BikeDataFeatureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BikeDataFeatureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5463ECAE2C99D5F700C422F4 /* BikeDataFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeDataFeatureTests.swift; sourceTree = "<group>"; };
+		5463ECAE2C99D5F700C422F4 /* LoadStationFromRemoteUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadStationFromRemoteUseCaseTests.swift; sourceTree = "<group>"; };
 		5463ECBD2C99D64500C422F4 /* StationLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationLoader.swift; sourceTree = "<group>"; };
 		5463ECC02C99D66700C422F4 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 		5463ECC42C99D79000C422F4 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
@@ -90,6 +90,7 @@
 		5463ECD32C99DAB600C422F4 /* CoreDataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataServices.swift; sourceTree = "<group>"; };
 		5463ECD62C99DD4100C422F4 /* HTTPClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientSpy.swift; sourceTree = "<group>"; };
 		5463ECD82C99DD4F00C422F4 /* SharedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
+		54D96EE62C99E13C00D83814 /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,7 +173,8 @@
 			isa = PBXGroup;
 			children = (
 				5463ECD52C99DD0900C422F4 /* Helpers */,
-				5463ECAE2C99D5F700C422F4 /* BikeDataFeatureTests.swift */,
+				5463ECAE2C99D5F700C422F4 /* LoadStationFromRemoteUseCaseTests.swift */,
+				54D96EE62C99E13C00D83814 /* TestPlan.xctestplan */,
 			);
 			path = BikeDataFeatureTests;
 			sourceTree = "<group>";
@@ -412,7 +414,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5463ECAF2C99D5F700C422F4 /* BikeDataFeatureTests.swift in Sources */,
+				5463ECAF2C99D5F700C422F4 /* LoadStationFromRemoteUseCaseTests.swift in Sources */,
 				5463ECD72C99DD4100C422F4 /* HTTPClientSpy.swift in Sources */,
 				5463ECD92C99DD4F00C422F4 /* SharedTestHelpers.swift in Sources */,
 			);
@@ -565,6 +567,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BikeStation/Preview Content\"";
@@ -598,6 +601,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BikeStation/Preview Content\"";
@@ -707,6 +711,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S6CFQ992W6;
@@ -726,6 +731,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = S6CFQ992W6;

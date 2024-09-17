@@ -21,6 +21,6 @@ func makeStation(
 }
 
 func makeJSON(_ item: [String: Any]) -> Data {
-  let root = ["data": ["results": [item]]]
+  let root = ["network": ["stations": [item]]]
   return try! JSONSerialization.data(withJSONObject: root)
 }
