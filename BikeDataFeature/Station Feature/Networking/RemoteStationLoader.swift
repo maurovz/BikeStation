@@ -3,12 +3,12 @@ import Foundation
 public final class RemoteStationLoader: StationLoader {
   private let url: URL
   private let client: HTTPClient
-//  private let cache: CoreDataServices
+  private let cache: CoreDataServices
 
-  public init(url: URL, client: HTTPClient) { //, cache: CoreDataServices) {
+  public init(url: URL, client: HTTPClient, cache: CoreDataServices) {
     self.url = url
     self.client = client
-//    self.cache = cache
+    self.cache = cache
   }
 
   public typealias Result = StationLoader.Result
@@ -26,19 +26,19 @@ public final class RemoteStationLoader: StationLoader {
         completion(.success(mappedStation))
 
       case .failure(let error):
-//        let cacheStations = self.cache.loadStationsFromCoreData()
-//        guard !cacheStations.isEmpty else {
+        let cacheStations = self.cache.loadStationsFromCoreData()
+        guard !cacheStations.isEmpty else {
           completion(.failure(error))
           return
-//        }
-//
-//        completion(.success(cacheStations))
+        }
+
+        completion(.success(cacheStations))
       }
     }
   }
 
   private func setCache(stations: [Station]) {
-//    guard cache.deleteEntityFromCoreData(entity: "StationEntity") else { return }
-//    cache.saveStationsToCache(stations: stations)
+    guard cache.deleteEntityFromCoreData(entity: "StationEntity") else { return }
+    cache.saveStationsToCache(stations: stations)
   }
 }

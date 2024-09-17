@@ -23,6 +23,9 @@
 		5463ECC72C99D79E00C422F4 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463ECC62C99D79E00C422F4 /* HTTPClient.swift */; };
 		5463ECC92C99D7AA00C422F4 /* RemoteStationLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463ECC82C99D7AA00C422F4 /* RemoteStationLoader.swift */; };
 		5463ECCC2C99D80E00C422F4 /* StationMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463ECCB2C99D80E00C422F4 /* StationMapper.swift */; };
+		5463ECCF2C99D9DE00C422F4 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463ECCE2C99D9DE00C422F4 /* CoreDataStack.swift */; };
+		5463ECD22C99D9FB00C422F4 /* StationModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5463ECD02C99D9FB00C422F4 /* StationModel.xcdatamodeld */; };
+		5463ECD42C99DAB600C422F4 /* CoreDataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463ECD32C99DAB600C422F4 /* CoreDataServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +83,9 @@
 		5463ECC62C99D79E00C422F4 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
 		5463ECC82C99D7AA00C422F4 /* RemoteStationLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteStationLoader.swift; sourceTree = "<group>"; };
 		5463ECCB2C99D80E00C422F4 /* StationMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationMapper.swift; sourceTree = "<group>"; };
+		5463ECCE2C99D9DE00C422F4 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		5463ECD12C99D9FB00C422F4 /* StationModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StationModel.xcdatamodel; sourceTree = "<group>"; };
+		5463ECD32C99DAB600C422F4 /* CoreDataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +195,8 @@
 		5463ECC22C99D76A00C422F4 /* Cache */ = {
 			isa = PBXGroup;
 			children = (
+				5463ECCD2C99D9D000C422F4 /* Infra */,
+				5463ECD32C99DAB600C422F4 /* CoreDataServices.swift */,
 			);
 			path = Cache;
 			sourceTree = "<group>";
@@ -209,6 +217,15 @@
 				5463ECCB2C99D80E00C422F4 /* StationMapper.swift */,
 			);
 			path = Mappers;
+			sourceTree = "<group>";
+		};
+		5463ECCD2C99D9D000C422F4 /* Infra */ = {
+			isa = PBXGroup;
+			children = (
+				5463ECCE2C99D9DE00C422F4 /* CoreDataStack.swift */,
+				5463ECD02C99D9FB00C422F4 /* StationModel.xcdatamodeld */,
+			);
+			path = Infra;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,9 +382,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5463ECCF2C99D9DE00C422F4 /* CoreDataStack.swift in Sources */,
 				5463ECC12C99D66700C422F4 /* Station.swift in Sources */,
 				5463ECCC2C99D80E00C422F4 /* StationMapper.swift in Sources */,
+				5463ECD42C99DAB600C422F4 /* CoreDataServices.swift in Sources */,
 				5463ECBE2C99D64500C422F4 /* StationLoader.swift in Sources */,
+				5463ECD22C99D9FB00C422F4 /* StationModel.xcdatamodeld in Sources */,
 				5463ECC72C99D79E00C422F4 /* HTTPClient.swift in Sources */,
 				5463ECC92C99D7AA00C422F4 /* RemoteStationLoader.swift in Sources */,
 				5463ECC52C99D79000C422F4 /* URLSessionHTTPClient.swift in Sources */,
@@ -593,6 +613,7 @@
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -632,6 +653,7 @@
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -743,6 +765,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5463ECD02C99D9FB00C422F4 /* StationModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5463ECD12C99D9FB00C422F4 /* StationModel.xcdatamodel */,
+			);
+			currentVersion = 5463ECD12C99D9FB00C422F4 /* StationModel.xcdatamodel */;
+			name = StationModel.xcdatamodeld;
+			path = "/Users/mauriciovazquez/Documents/BikeStation/BikeDataFeature/Station Feature/Cache/Infra/StationModel.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5463EC802C99D54000C422F4 /* Project object */;
 }
