@@ -32,6 +32,7 @@
 		54D96EF72C99E5BA00D83814 /* BikeDataFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5463ECA02C99D5F700C422F4 /* BikeDataFeature.framework */; };
 		54D96EF82C99E5BA00D83814 /* BikeDataFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5463ECA02C99D5F700C422F4 /* BikeDataFeature.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		54D96EFE2C99E70800D83814 /* BikeStationListViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D96EFD2C99E70800D83814 /* BikeStationListViewFactory.swift */; };
+		54D96F002C99E77200D83814 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D96EFF2C99E77200D83814 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		54D96EEA2C99E40D00D83814 /* BikeStationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationsViewModel.swift; sourceTree = "<group>"; };
 		54D96EEC2C99E42400D83814 /* StationItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationItemViewModel.swift; sourceTree = "<group>"; };
 		54D96EFD2C99E70800D83814 /* BikeStationListViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationListViewFactory.swift; sourceTree = "<group>"; };
+		54D96EFF2C99E77200D83814 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 				5463EC8F2C99D54000C422F4 /* Item.swift */,
 				5463EC912C99D54200C422F4 /* Assets.xcassets */,
 				5463EC932C99D54200C422F4 /* Preview Content */,
+				54D96EFF2C99E77200D83814 /* Constants.swift */,
 			);
 			path = BikeStation;
 			sourceTree = "<group>";
@@ -447,6 +450,7 @@
 				54D96EEB2C99E40D00D83814 /* BikeStationsViewModel.swift in Sources */,
 				5463EC902C99D54000C422F4 /* Item.swift in Sources */,
 				5463EC8C2C99D54000C422F4 /* BikeStationApp.swift in Sources */,
+				54D96F002C99E77200D83814 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
