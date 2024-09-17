@@ -31,6 +31,7 @@
 		54D96EED2C99E42400D83814 /* StationItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D96EEC2C99E42400D83814 /* StationItemViewModel.swift */; };
 		54D96EF72C99E5BA00D83814 /* BikeDataFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5463ECA02C99D5F700C422F4 /* BikeDataFeature.framework */; };
 		54D96EF82C99E5BA00D83814 /* BikeDataFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5463ECA02C99D5F700C422F4 /* BikeDataFeature.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		54D96EFE2C99E70800D83814 /* BikeStationListViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D96EFD2C99E70800D83814 /* BikeStationListViewFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		54D96EE72C99E3B300D83814 /* BikeStationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationListView.swift; sourceTree = "<group>"; };
 		54D96EEA2C99E40D00D83814 /* BikeStationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationsViewModel.swift; sourceTree = "<group>"; };
 		54D96EEC2C99E42400D83814 /* StationItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationItemViewModel.swift; sourceTree = "<group>"; };
+		54D96EFD2C99E70800D83814 /* BikeStationListViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationListViewFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 		5463EC8A2C99D54000C422F4 /* BikeStation */ = {
 			isa = PBXGroup;
 			children = (
+				54D96EFC2C99E6F800D83814 /* Factories */,
 				54D96EE92C99E3E100D83814 /* BikeStationList */,
 				5463EC8B2C99D54000C422F4 /* BikeStationApp.swift */,
 				5463EC8D2C99D54000C422F4 /* ContentView.swift */,
@@ -255,9 +258,8 @@
 		54D96EE92C99E3E100D83814 /* BikeStationList */ = {
 			isa = PBXGroup;
 			children = (
-				54D96EE72C99E3B300D83814 /* BikeStationListView.swift */,
-				54D96EEA2C99E40D00D83814 /* BikeStationsViewModel.swift */,
-				54D96EEC2C99E42400D83814 /* StationItemViewModel.swift */,
+				54D96EFB2C99E6D500D83814 /* ViewModel */,
+				54D96EFA2C99E6C600D83814 /* View */,
 			);
 			path = BikeStationList;
 			sourceTree = "<group>";
@@ -267,6 +269,31 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		54D96EFA2C99E6C600D83814 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				54D96EE72C99E3B300D83814 /* BikeStationListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		54D96EFB2C99E6D500D83814 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				54D96EEA2C99E40D00D83814 /* BikeStationsViewModel.swift */,
+				54D96EEC2C99E42400D83814 /* StationItemViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		54D96EFC2C99E6F800D83814 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				54D96EFD2C99E70800D83814 /* BikeStationListViewFactory.swift */,
+			);
+			path = Factories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -413,6 +440,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54D96EFE2C99E70800D83814 /* BikeStationListViewFactory.swift in Sources */,
 				54D96EED2C99E42400D83814 /* StationItemViewModel.swift in Sources */,
 				54D96EE82C99E3B300D83814 /* BikeStationListView.swift in Sources */,
 				5463EC8E2C99D54000C422F4 /* ContentView.swift in Sources */,

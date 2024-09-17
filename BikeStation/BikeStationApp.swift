@@ -1,32 +1,32 @@
-//
-//  BikeStationApp.swift
-//  BikeStation
-//
-//  Created by Mauricio Vazquez on 17/9/24.
-//
-
 import SwiftUI
-import SwiftData
+import BikeDataFeature
 
 @main
 struct BikeStationApp: App {
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
+  var body: some Scene {
+      WindowGroup {
+        BikeStationListViewFactory.create()
+      }
+  }
+}
 
-        do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
-        }
-    }()
+struct BikeStationListViewFactory {
+  static func create() -> BikeStationListView {
+    let viewModel = BikeStationsViewModel(loader: getLoader(), didSelectAction: openMapCoordinates)
+    return BikeStationListView(viewModel: viewModel)
+  }
 
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-        .modelContainer(sharedModelContainer)
-    }
+  static func getLoader() -> RemoteStationLoader {
+    let client = URLSessionHTTPClient(session: .shared)
+    return RemoteStationLoader(url: Constants.url, client: client, cache: CoreDataServices())
+  }
+}
+
+func openMapCoordinates(for viewModel: StationItemViewModel) {
+  let urlString = "http://maps.apple.com/?ll=\(viewModel.latitude),\(viewModel.longitude)"
+  UIApplication.shared.open(URL(string: urlString)!, options: [:], completionHandler: nil)
+}
+
+struct Constants {
+  static let url = URL(string: "https://api.citybik.es/v2/networks/wienmobil-rad")!
 }
