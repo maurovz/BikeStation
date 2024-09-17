@@ -19,6 +19,10 @@
 		5463ECB42C99D5F700C422F4 /* BikeDataFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5463ECA02C99D5F700C422F4 /* BikeDataFeature.framework */; platformFilters = (macos, ); settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5463ECBE2C99D64500C422F4 /* StationLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463ECBD2C99D64500C422F4 /* StationLoader.swift */; };
 		5463ECC12C99D66700C422F4 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463ECC02C99D66700C422F4 /* Station.swift */; };
+		5463ECC52C99D79000C422F4 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463ECC42C99D79000C422F4 /* URLSessionHTTPClient.swift */; };
+		5463ECC72C99D79E00C422F4 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463ECC62C99D79E00C422F4 /* HTTPClient.swift */; };
+		5463ECC92C99D7AA00C422F4 /* RemoteStationLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463ECC82C99D7AA00C422F4 /* RemoteStationLoader.swift */; };
+		5463ECCC2C99D80E00C422F4 /* StationMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463ECCB2C99D80E00C422F4 /* StationMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +76,10 @@
 		5463ECAE2C99D5F700C422F4 /* BikeDataFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeDataFeatureTests.swift; sourceTree = "<group>"; };
 		5463ECBD2C99D64500C422F4 /* StationLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationLoader.swift; sourceTree = "<group>"; };
 		5463ECC02C99D66700C422F4 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		5463ECC42C99D79000C422F4 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
+		5463ECC62C99D79E00C422F4 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		5463ECC82C99D7AA00C422F4 /* RemoteStationLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteStationLoader.swift; sourceTree = "<group>"; };
+		5463ECCB2C99D80E00C422F4 /* StationMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +169,9 @@
 		5463ECBC2C99D62A00C422F4 /* Station Feature */ = {
 			isa = PBXGroup;
 			children = (
+				5463ECCA2C99D80600C422F4 /* Mappers */,
+				5463ECC32C99D77400C422F4 /* Networking */,
+				5463ECC22C99D76A00C422F4 /* Cache */,
 				5463ECBF2C99D65A00C422F4 /* Models */,
 				5463ECBD2C99D64500C422F4 /* StationLoader.swift */,
 			);
@@ -173,6 +184,31 @@
 				5463ECC02C99D66700C422F4 /* Station.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		5463ECC22C99D76A00C422F4 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		5463ECC32C99D77400C422F4 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				5463ECC42C99D79000C422F4 /* URLSessionHTTPClient.swift */,
+				5463ECC62C99D79E00C422F4 /* HTTPClient.swift */,
+				5463ECC82C99D7AA00C422F4 /* RemoteStationLoader.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		5463ECCA2C99D80600C422F4 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				5463ECCB2C99D80E00C422F4 /* StationMapper.swift */,
+			);
+			path = Mappers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,7 +366,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5463ECC12C99D66700C422F4 /* Station.swift in Sources */,
+				5463ECCC2C99D80E00C422F4 /* StationMapper.swift in Sources */,
 				5463ECBE2C99D64500C422F4 /* StationLoader.swift in Sources */,
+				5463ECC72C99D79E00C422F4 /* HTTPClient.swift in Sources */,
+				5463ECC92C99D7AA00C422F4 /* RemoteStationLoader.swift in Sources */,
+				5463ECC52C99D79000C422F4 /* URLSessionHTTPClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
