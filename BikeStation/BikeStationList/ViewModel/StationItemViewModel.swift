@@ -1,5 +1,6 @@
 import Foundation
 import BikeDataFeature
+import CoreLocation
 
 class StationItemViewModel: Identifiable {
   lazy var id: String = {
@@ -34,5 +35,10 @@ class StationItemViewModel: Identifiable {
 
   init(station: Station) {
     self.station = station
+  }
+
+  func distance(from location: CLLocation) -> CLLocationDistance {
+    let stationLocation = CLLocation(latitude: latitude, longitude: longitude)
+    return stationLocation.distance(from: location)
   }
 }

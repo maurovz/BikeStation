@@ -11,21 +11,21 @@ struct BikeStationListView: View {
   var body: some View {
     ScrollView {
       VStack(alignment: .leading) {
-        Text("Bike Station List!")
+        Text("Bike Station List!") //TODO: Localization
           .font(.title)
           .padding(.bottom)
 
-        ForEach(viewModel.fileteredStations) { station in
+        ForEach(viewModel.filteredStations) { station in
           VStack(alignment: .leading) {
             HStack {
               Text(station.name)
               Spacer()
-              Text("Station number: 324")
+              Text("Station number: \(station.stationNumber)")
             }
             HStack {
-              Text("Bikes available: 3")
-              Spacer() // Ensure proper alignment
-              Text("Empty slots: 2")
+              Text("Bikes available: \(station.freeBikes)")
+              Spacer()
+              Text("Empty slots: \(station.emptySlots)")
             }
           }
           .padding()
