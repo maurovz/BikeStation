@@ -97,6 +97,7 @@
 		54D96EEC2C99E42400D83814 /* StationItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationItemViewModel.swift; sourceTree = "<group>"; };
 		54D96EFD2C99E70800D83814 /* BikeStationListViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationListViewFactory.swift; sourceTree = "<group>"; };
 		54D96EFF2C99E77200D83814 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		54D96F032C99F0A500D83814 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +151,7 @@
 		5463EC8A2C99D54000C422F4 /* BikeStation */ = {
 			isa = PBXGroup;
 			children = (
+				54D96F032C99F0A500D83814 /* Info.plist */,
 				54D96EE92C99E3E100D83814 /* BikeStationList */,
 				54D96EFC2C99E6F800D83814 /* Factories */,
 				5463EC8B2C99D54000C422F4 /* BikeStationApp.swift */,
@@ -625,6 +627,8 @@
 				DEVELOPMENT_TEAM = S6CFQ992W6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BikeStation/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to show you relevant data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -660,6 +664,8 @@
 				DEVELOPMENT_TEAM = S6CFQ992W6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BikeStation/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to show you relevant data";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
