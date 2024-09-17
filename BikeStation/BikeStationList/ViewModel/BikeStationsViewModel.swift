@@ -16,11 +16,8 @@ class BikeStationsViewModel: ObservableObject {
 
   public weak var delegate: BikeStationViewProtocol?
 
-  public var didSelectAction: SelectionAction
-
-  init(loader: StationLoader, didSelectAction: @escaping SelectionAction) {
+  init(loader: StationLoader) {
     self.loader = loader
-    self.didSelectAction = didSelectAction
   }
 
   public func fetch() {
@@ -56,6 +53,10 @@ class BikeStationsViewModel: ObservableObject {
 
   public func resetFilter() {
     filteredStations =  stations
+  }
+
+  public func getCoordinatesUrl(station: StationItemViewModel) -> URL {
+    URL(string: "http://maps.apple.com/?ll=\(station.latitude),\(station.longitude)")!
   }
 
   private func setStations(_ value: [Station]) {

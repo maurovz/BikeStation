@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		44898CA82C9A058D00A9226B /* StationModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 44898CA62C9A058D00A9226B /* StationModel.xcdatamodeld */; };
+		544BCC902C9A0E670034135F /* BikeStationListViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D96EFD2C99E70800D83814 /* BikeStationListViewFactory.swift */; };
 		5463EC8C2C99D54000C422F4 /* BikeStationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463EC8B2C99D54000C422F4 /* BikeStationApp.swift */; };
 		5463EC922C99D54200C422F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5463EC912C99D54200C422F4 /* Assets.xcassets */; };
 		5463EC952C99D54200C422F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5463EC942C99D54200C422F4 /* Preview Assets.xcassets */; };
@@ -29,7 +30,6 @@
 		54D96EED2C99E42400D83814 /* StationItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D96EEC2C99E42400D83814 /* StationItemViewModel.swift */; };
 		54D96EF72C99E5BA00D83814 /* BikeDataFeature.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5463ECA02C99D5F700C422F4 /* BikeDataFeature.framework */; };
 		54D96EF82C99E5BA00D83814 /* BikeDataFeature.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5463ECA02C99D5F700C422F4 /* BikeDataFeature.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		54D96EFE2C99E70800D83814 /* BikeStationListViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D96EFD2C99E70800D83814 /* BikeStationListViewFactory.swift */; };
 		54D96F002C99E77200D83814 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D96EFF2C99E77200D83814 /* Constants.swift */; };
 		54D96F0A2C99F68100D83814 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D96F092C99F68100D83814 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
@@ -74,6 +74,7 @@
 
 /* Begin PBXFileReference section */
 		44898CA72C9A058D00A9226B /* StationModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StationModel.xcdatamodel; sourceTree = "<group>"; };
+		544BCC8F2C9A0BAE0034135F /* BikeDataFeature.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = BikeDataFeature.xctestplan; path = ../BikeDataFeature.xctestplan; sourceTree = "<group>"; };
 		5463EC882C99D54000C422F4 /* BikeStation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BikeStation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5463EC8B2C99D54000C422F4 /* BikeStationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationApp.swift; sourceTree = "<group>"; };
 		5463EC912C99D54200C422F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -92,7 +93,6 @@
 		5463ECD32C99DAB600C422F4 /* CoreDataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataServices.swift; sourceTree = "<group>"; };
 		5463ECD62C99DD4100C422F4 /* HTTPClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientSpy.swift; sourceTree = "<group>"; };
 		5463ECD82C99DD4F00C422F4 /* SharedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
-		54D96EE62C99E13C00D83814 /* TestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlan.xctestplan; sourceTree = "<group>"; };
 		54D96EE72C99E3B300D83814 /* BikeStationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationListView.swift; sourceTree = "<group>"; };
 		54D96EEA2C99E40D00D83814 /* BikeStationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationsViewModel.swift; sourceTree = "<group>"; };
 		54D96EEC2C99E42400D83814 /* StationItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationItemViewModel.swift; sourceTree = "<group>"; };
@@ -131,6 +131,7 @@
 		5463EC7F2C99D54000C422F4 = {
 			isa = PBXGroup;
 			children = (
+				544BCC8F2C9A0BAE0034135F /* BikeDataFeature.xctestplan */,
 				5463EC8A2C99D54000C422F4 /* BikeStation */,
 				5463ECA12C99D5F700C422F4 /* BikeDataFeature */,
 				5463ECAD2C99D5F700C422F4 /* BikeDataFeatureTests */,
@@ -185,7 +186,6 @@
 			children = (
 				5463ECD52C99DD0900C422F4 /* Helpers */,
 				5463ECAE2C99D5F700C422F4 /* LoadStationFromRemoteUseCaseTests.swift */,
-				54D96EE62C99E13C00D83814 /* TestPlan.xctestplan */,
 			);
 			path = BikeDataFeatureTests;
 			sourceTree = "<group>";
@@ -448,7 +448,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54D96EFE2C99E70800D83814 /* BikeStationListViewFactory.swift in Sources */,
+				544BCC902C9A0E670034135F /* BikeStationListViewFactory.swift in Sources */,
 				54D96EED2C99E42400D83814 /* StationItemViewModel.swift in Sources */,
 				54D96EE82C99E3B300D83814 /* BikeStationListView.swift in Sources */,
 				54D96F0A2C99F68100D83814 /* LocationManager.swift in Sources */,

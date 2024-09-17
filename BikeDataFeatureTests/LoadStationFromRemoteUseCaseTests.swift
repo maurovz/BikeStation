@@ -36,7 +36,7 @@ class LoadStationFromRemoteUseCaseTests: XCTestCase {
 
   func test_load_deliversStationOnClientSuccessfulResponse() {
     let (sut, client) = makeSUT()
-    let station = makeStation(id: "abc123", name: "Some Location", latitude: 1.0000, longitude: 2.0000)
+    let station = makeStation(id: "abc123", name: "Some Location", latitude: 1.0000, longitude: 2.0000, freeBikes: 3, emptySlots: 4, stationNumber: "1234")
 
     expect(sut, completesWith: .success(station.model), when: {
       let json = makeJSON(station.json)
